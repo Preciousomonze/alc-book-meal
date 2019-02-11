@@ -1,5 +1,5 @@
 
-import express from './express';
+import express from 'express';
 import mealsRoute from './routes/mealsRoute';
 
 const app = express();
