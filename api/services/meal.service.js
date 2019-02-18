@@ -1,9 +1,9 @@
-import dummyData from '../data/dummyData';
+import DummyData from '../data/dummy-data';
 import Meal from '../models/meal.model';
 
 const MealService = {
   fetchAllMeals() {
-    const realMeals = dummyData.meals.map((meal) => {
+    const realMeals = DummyData.meals.map((meal) => {
       const newMeal = new Meal();
       newMeal.id = meal.id;
       newMeal.name = meal.name;
@@ -15,22 +15,22 @@ const MealService = {
   },
   addMeal(meal) {
     const mealItself = meal;
-    const mealLength = dummyData.meals.length;
-    const lastId = dummyData.meals[mealLength - 1].id;
+    const mealLength = DummyData.meals.length;
+    const lastId = DummyData.meals[mealLength - 1].id;
     const newId = lastId + 1;
     mealItself.id = newId;
-    dummyData.meals.push(meal);
+    DummyData.meals.push(meal);
     return meal;
   },
   getAMeal(id) {
-    const mealGet = dummyData.meals.find(meal => meal.id === id);
+    const mealGet = DummyData.meals.find(meal => meal.id === id);
     return mealGet || {};
   },
   deleteMeal(id) {
-    const mealGet = dummyData.meals.find(meal => meal.id === id);
-    const index = dummyData.meals.indexOf(mealGet);
-    dummyData.meals.splice(index, 1);
-    return dummyData.meals;
+    const mealGet = DummyData.meals.find(meal => meal.id === id);
+    const index = DummyData.meals.indexOf(mealGet);
+    DummyData.meals.splice(index, 1);
+    return DummyData.meals;
   },
 };
 
