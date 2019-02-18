@@ -1,9 +1,10 @@
 import dummyData from '../data/menuDummyData';
 import Menu from '../models/menu.model';
 
+const { menuData } = dummyData; // seeing dummy stuff all the time is somehow jare :)
 const MenuService = {
   getMenus() {
-    const realMenus = dummyData.menus.map((menu) => {
+    const realMenus = menuData.menus.map((menu) => {
       const newMenu = new Menu();
       newMenu.id = menu.id;
       newMenu.name = menu.name;
@@ -15,11 +16,11 @@ const MenuService = {
   },
   addMenu(menu) {
     const menuItself = menu;
-    const menuLength = dummyData.menus.length;
-    const lastId = dummyData.menus[menuLength - 1].id;
+    const menuLength = menuData.menus.length;
+    const lastId = menuData.menus[menuLength - 1].id;
     const newId = lastId + 1;
     menuItself.id = newId;
-    dummyData.menus.push(menu);
+    menuData.menus.push(menu);
     return menu;
   },
 };
