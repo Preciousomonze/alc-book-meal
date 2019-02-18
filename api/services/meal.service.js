@@ -22,7 +22,7 @@ const MealService = {
     dummyData.meals.push(meal);
     return meal;
   },
-  getAMeal(id) {
+  getMeal(id) {
     const mealGet = dummyData.meals.find(meal => meal.id === id);
     return mealGet || {};
   },
