@@ -11,5 +11,4 @@ mealRouter.post('/meals/', MealController.addAMeal);
 mealRouter.get('/meals/:id', MealController.getSingleMeal);
 
 mealRouter.delete('/meals/:id', MealController.deleteMeal);
-
 export default mealRouter;
