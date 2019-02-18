@@ -35,5 +35,4 @@ const MealService = {
     return mealData.meals;
   },
 };
-
 export default MealService;

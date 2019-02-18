@@ -46,5 +46,4 @@ const OrderServices = {
     return 'Order deleted successfully';
   },
 };
-
 export default OrderServices;

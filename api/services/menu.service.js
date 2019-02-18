@@ -24,5 +24,4 @@ const MenuService = {
     return menu;
   },
 };
-
 export default MenuService;
