@@ -2,7 +2,7 @@ import dummyData from '../data/menuDummyData';
 import Menu from '../models/menu.model';
 
 const MenuService = {
-  fetchAllMenus() {
+  getMenus() {
     const realMenus = dummyData.menus.map((menu) => {
       const newMenu = new Menu();
       newMenu.id = menu.id;

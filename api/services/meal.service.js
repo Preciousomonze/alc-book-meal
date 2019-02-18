@@ -2,7 +2,7 @@ import dummyData from '../data/mealDummyData';
 import Meal from '../models/meal.model';
 
 const MealService = {
-  fetchAllMeals() {
+  getMeals() {
     const realMeals = dummyData.meals.map((meal) => {
       const newMeal = new Meal();
       newMeal.id = meal.id;
