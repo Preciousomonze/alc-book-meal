@@ -2,6 +2,7 @@ import dummyData from '../data/mealDummyData';
 import Meal from '../models/meal.model';
 
 const { mealData } = dummyData;// seeing dummy stuff all the time is somehow jare :)
+console.log(mealData);
 
 const MealService = {
   getMeals() {

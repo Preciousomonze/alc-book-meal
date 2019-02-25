@@ -11,7 +11,16 @@ app.use(apiNamespace, orderRouter);
 app.use(apiNamespace, mealRouter);
 app.use(apiNamespace, menuRouter);
 
-const PORT = 7000;
+// home
+app.all('/', (req, res) => (
+  res
+    .json({
+      status: 'success',
+      message: 'Welcome to The book a meal better chow ',
+    })
+    .status(200)));
+
+const PORT = process.env.PORT || 7000;
 app.listen(PORT, () => {
   // eslint-disable-next-line no-console
   console.log(`yae, server running on port ${PORT} :)`);
