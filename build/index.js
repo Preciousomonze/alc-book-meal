@@ -28,7 +28,7 @@ app.all('/', function (req, res) {
     message: 'Welcome to The book a meal better chow '
   }).status(200);
 });
-var PORT = process.env.PORT || 7000;
+var PORT = 7000;
 app.listen(PORT, function () {
   // eslint-disable-next-line no-console
   console.log("yae, server running on port ".concat(PORT, " :)"));

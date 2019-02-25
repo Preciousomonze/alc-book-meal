@@ -11,9 +11,8 @@ var _meal = _interopRequireDefault(require("../models/meal.model"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var mealData = _mealDummyData.default.mealData; // seeing dummy stuff all the time is somehow jare :)
+var mealData = _mealDummyData.default; // seeing dummy stuff all the time is somehow jare :)
 
-console.log(mealData);
 var MealService = {
   getMeals: function getMeals() {
     var realMeals = mealData.meals.map(function (meal) {
