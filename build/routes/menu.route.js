@@ -13,8 +13,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var router = (0, _express.Router)(); // add menu controller
 
-router.get('menu/', _menu.default.getMenu);
-router.post('menu/', _menu.default.addMenu);
+router.get('/menu/', _menu.default.getMenu);
+router.post('/menu/', _menu.default.addMenu);
 var menuRouter = router;
 var _default = menuRouter;
 exports.default = _default;

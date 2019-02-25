@@ -20,7 +20,14 @@ var app = (0, _express.default)();
 var apiNamespace = '/api/v1/';
 app.use(apiNamespace, _order.default);
 app.use(apiNamespace, _meal.default);
-app.use(apiNamespace, _menu.default);
+app.use(apiNamespace, _menu.default); // home
+
+app.all('/', function (req, res) {
+  return res.json({
+    status: 'success',
+    message: 'Welcome to The book a meal better chow '
+  }).status(200);
+});
 var PORT = process.env.PORT || 7000;
 app.listen(PORT, function () {
   // eslint-disable-next-line no-console
