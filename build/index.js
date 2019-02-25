@@ -25,10 +25,17 @@ app.use(apiNamespace, _menu.default); // home
 app.all('/', function (req, res) {
   return res.json({
     status: 'success',
-    message: 'Welcome to The book a meal better chow '
+    message: 'Welcome to The book a meal better chow'
+  }).status(200);
+}); // for fun
+
+app.all(apiNamespace, function (req, res) {
+  return res.json({
+    status: 'success',
+    message: 'Welcome to The book a meal better chow api version 1'
   }).status(200);
 });
-var PORT = 7000;
+var PORT = process.env.PORT || 7000;
 app.listen(PORT, function () {
   // eslint-disable-next-line no-console
   console.log("yae, server running on port ".concat(PORT, " :)"));
