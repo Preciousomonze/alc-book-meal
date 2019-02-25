@@ -1,1 +1,1 @@
-web: clean-start
+web: npm clean-start

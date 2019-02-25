@@ -7,7 +7,7 @@
     "clean-start": "node server/index.js",
     "clean": "rm -rf build && mkdir build",
     "build-server": "babel -d ./build ./server -s",
-    "build": "clean && npm build-server",
+    "build": "npm run clean && npm run build-server",
     "test": "nyc mocha -r esm --exit",
     "start": "nodemon --exec babel-node server/index.js",
     "generate-lcov": "nyc report --reporter=text-lcov > lcov.info",
@@ -34,9 +34,12 @@
     "sequelize": "^4.42.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
+    "@babel/helpers": "^7.3.1",
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
+    "babel-core": "^7.0.0-bridge.0",
     "chai": "^4.2.0",
     "chai-http": "^4.2.1",
     "coveralls": "^3.0.3",
