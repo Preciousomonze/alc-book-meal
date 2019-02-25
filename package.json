@@ -4,8 +4,12 @@
   "description": "For andela stuff",
   "main": "index.js",
   "scripts": {
+    "clean-start": "node server/index.js",
+    "clean": "rm -rf build && mkdir build",
+    "build-server": "babel -d ./build ./server -s",
+    "build": "clean && npm build-server",
     "test": "nyc mocha -r esm --exit",
-    "start": "nodemon --exec babel-node api/index.js",
+    "start": "nodemon --exec babel-node server/index.js",
     "generate-lcov": "nyc report --reporter=text-lcov > lcov.info",
     "coveralls-coverage": "coveralls < lcov.info",
     "codeclimate-coverage": "codeclimate-test-reporter < lcov.info",

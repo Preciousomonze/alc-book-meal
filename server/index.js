@@ -2,7 +2,7 @@ import express from 'express';
 import orderRouter from './routes/order.route';
 import mealRouter from './routes/meal.route';
 import menuRouter from './routes/menu.route';
-// thanks to @timsprof for the inspiration
+// thanks to @timzprof for the inspiration
 
 const app = express();
 const apiNamespace = '/api/v1/';

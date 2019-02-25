@@ -29,7 +29,7 @@ const OrderController = {
       orderStuff,
     });
   },
-  deleteAnOrder(req, res) {
+  deleteOrder(req, res) {
     const { id } = req.params;
     const deletedStatus = OrderServices.deleteAnOrder(id);
     return res.json({
