@@ -4,11 +4,11 @@ import MealController from '../controllers/meal.controller';
 
 const mealRouter = Router();
 
-mealRouter.get('meals/', MealController.getMeals);
+mealRouter.get('/meals/', MealController.getMeals);
 
-mealRouter.post('meals/', MealController.addMeal);
+mealRouter.post('/meals/', MealController.addMeal);
 
-mealRouter.get('meals/:id', MealController.getMeal);
+mealRouter.get('/meals/:id', MealController.getMeal);
 
-mealRouter.delete('meals/:id', MealController.deleteMeal);
+mealRouter.delete('/meals/:id', MealController.deleteMeal);
 export default mealRouter;
