@@ -27,7 +27,7 @@ Book A Meal is an Ecommerce web app , for ordering food
 - Pull the [development](https://github.com/preciousomonze/alc-book-meal) branch off this repository
 - Run `npm install` to install all dependencies
 - Run npm start to start the app
-- Access endpoints on **localhost:7000**
+- Access endpoints on **`localhost:7000`**
 
 ## Built With
 * [Node.js](http://www.nodejs.org/) - Runtime-Enviroment
