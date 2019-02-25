@@ -6,6 +6,9 @@ Book A Meal is an Ecommerce web app , for ordering food
 [![Maintainability](https://api.codeclimate.com/v1/badges/0ac02b550fac93eddfc4/maintainability)](https://codeclimate.com/github/Preciousomonze/alc-book-meal/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/0ac02b550fac93eddfc4/test_coverage)](https://codeclimate.com/github/Preciousomonze/alc-book-meal/test_coverage)
 
+## Heroku link
+[https://precious-beta-chow.herokuapp.com/](https://precious-beta-chow.herokuapp.com/)
+
 ## Trello board
 [https://trello.com/b/D5Pfxoii/alc-meal-app](https://trello.com/b/D5Pfxoii/alc-meal-app)
 
