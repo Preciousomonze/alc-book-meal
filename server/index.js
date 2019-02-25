@@ -20,7 +20,7 @@ app.all('/', (req, res) => (
     })
     .status(200)));
 
-const PORT = process.env.PORT || 7000;
+const PORT = 7000;
 app.listen(PORT, () => {
   // eslint-disable-next-line no-console
   console.log(`yae, server running on port ${PORT} :)`);
