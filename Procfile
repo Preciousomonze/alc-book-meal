@@ -1,1 +1,1 @@
-web: npm clean-start
+web: node build/index.js

@@ -4,7 +4,7 @@
   "description": "For andela stuff",
   "main": "index.js",
   "scripts": {
-    "clean-start": "node server/index.js",
+    "clean-start": "node build/index.js",
     "clean": "rm -rf build && mkdir build",
     "build-server": "babel -d ./build ./server -s",
     "build": "npm run clean && npm run build-server",
