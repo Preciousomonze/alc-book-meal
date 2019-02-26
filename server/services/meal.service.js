@@ -18,7 +18,7 @@ const MealService = {
   addMeal(meal) {
     const mealItself = meal;
     const mealLength = mealData.meals.length;
-    const lastId = mealData.meals[mealLength - 1].id;
+    const lastId = mealData.meals[(mealLength - 1)].id;
     const newId = lastId + 1;
     mealItself.id = newId;
     mealData.meals.push(meal);

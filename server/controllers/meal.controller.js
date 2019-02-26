@@ -20,13 +20,14 @@ const MealController = {
             }
         */
     const newMeal = req.body;
+    console.log(newMeal);
     const createdMeal = MealService.addMeal(newMeal);
     return res
       .json({
         status: 'success',
         data: createdMeal,
       })
-      .status(201);
+      .status(200);
   },
   getMeal(req, res) {
     // eslint-disable-next-line prefer-destructuring

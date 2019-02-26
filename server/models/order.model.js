@@ -2,7 +2,7 @@
 
 const date = new Date();
 const month = `${date.getMonth() + 1}`;
-const today = `${date.getDate()}-${month.padStart(2, '0')}-${date.getFullYear()}`;// get DD-MM-YYYY
+const today = `${date.getDate()}-${month.padStart}-${date.getFullYear()}`;// get DD-MM-YYYY
 
 class Orders {
   constructor() {
