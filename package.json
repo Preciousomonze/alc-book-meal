@@ -8,7 +8,7 @@
     "clean": "rm -rf build && mkdir build",
     "build-server": "babel -d ./build ./server -s",
     "build": "npm run clean && npm run build-server",
-    "test": "nyc mocha --exit --timeout 100000 --require @babel/register ./test/*",
+    "test": "nyc mocha --exit --timeout 1000000 --require @babel/register ./test/*",
     "start": "nodemon --exec babel-node server/index.js",
     "generate-lcov": "nyc report --reporter=text-lcov > lcov.info",
     "coveralls-coverage": "coveralls < lcov.info",
@@ -50,6 +50,7 @@
     "mocha": "^6.0.1",
     "mocha-lcov-reporter": "^1.3.0",
     "nodemon": "^1.18.9",
-    "nyc": "^13.3.0"
+    "nyc": "^13.3.0",
+    "should": "^13.2.3"
   }
 }

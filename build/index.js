@@ -7,6 +7,8 @@ exports.default = void 0;
 
 var _express = _interopRequireDefault(require("express"));
 
+var _bodyParser = _interopRequireDefault(require("body-parser"));
+
 var _order = _interopRequireDefault(require("./routes/order.route"));
 
 var _meal = _interopRequireDefault(require("./routes/meal.route"));
@@ -18,6 +20,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // thanks to @timzprof for the inspiration
 var app = (0, _express.default)();
 var apiNamespace = '/api/v1/';
+app.use(_bodyParser.default.urlencoded({
+  extended: false
+}));
+app.use(_bodyParser.default.json);
 app.use(apiNamespace, _order.default);
 app.use(apiNamespace, _meal.default);
 app.use(apiNamespace, _menu.default); // home

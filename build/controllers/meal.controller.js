@@ -28,13 +28,14 @@ var MealController = {
             }
         */
     var newMeal = req.body;
+    console.log(newMeal);
 
     var createdMeal = _meal.default.addMeal(newMeal);
 
     return res.json({
       status: 'success',
       data: createdMeal
-    }).status(201);
+    }).status(200);
   },
   getMeal: function getMeal(req, res) {
     // eslint-disable-next-line prefer-destructuring

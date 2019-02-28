@@ -14,7 +14,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /* set date format and stuff */
 var date = new Date();
 var month = "".concat(date.getMonth() + 1);
-var today = "".concat(date.getDate(), "-").concat(month.padStart(2, '0'), "-").concat(date.getFullYear()); // get DD-MM-YYYY
+var today = "".concat(date.getDate(), "-").concat(month.padStart, "-").concat(date.getFullYear()); // get DD-MM-YYYY
 
 var Orders =
 /*#__PURE__*/

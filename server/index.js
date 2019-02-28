@@ -1,11 +1,15 @@
 import express from 'express';
+import bodyParser from 'body-parser';
 import orderRouter from './routes/order.route';
 import mealRouter from './routes/meal.route';
 import menuRouter from './routes/menu.route';
+
 // thanks to @timzprof for the inspiration
 
 const app = express();
 const apiNamespace = '/api/v1/';
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json);
 
 app.use(apiNamespace, orderRouter);
 app.use(apiNamespace, mealRouter);
