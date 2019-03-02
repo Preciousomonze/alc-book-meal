@@ -43,7 +43,7 @@ describe('TESTING FOR MEALS', () => {
         .send(meal)
         .end((err, res) => {
           res.should.have.property('status', 200);
-          // res.body.should.be.an('object');
+          res.body.should.be.an('object');
           done(err);
         });
     });
