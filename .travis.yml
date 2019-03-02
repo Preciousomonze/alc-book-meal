@@ -4,8 +4,8 @@ node_js:
 cache:
   direcotories:
   - "node_modules"
-env: 
-  global:
-    - CODECLIMATE_REPO_TOKEN=9j7QdhpiKZDjWjqPQrBS8rUn1QZrYJIQ7
 script: npm test
 after_success: npm run coverage
+env: 
+  global:
+    - CODECLIMATE_REPO_TOKEN=f71b9292c8a4c2cbb06e9ca48c33d609f383e3597326dd9c0f03f34d4c4459d7
