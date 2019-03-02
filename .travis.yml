@@ -6,6 +6,6 @@ cache:
   - "node_modules"
 env: 
   global:
-  - CODECLIMATE_REPO_TOKEN=9j7QdhpiKZDjWjqPQrBS8rUn1QZrYJIQ7
+    - CODECLIMATE_REPO_TOKEN=9j7QdhpiKZDjWjqPQrBS8rUn1QZrYJIQ7
 script: npm test
 after_success: npm run coverage
