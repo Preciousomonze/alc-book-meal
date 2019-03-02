@@ -7,7 +7,7 @@ import app from '../server/index';
 process.env.NODE_ENV = 'test';
 const server = app;
 chai.use(chaiHttp);
-const should = chai.should(); // simpler english for me
+chai.should(); // simpler english for me
 
 // Our parent block
 describe('TESTING FOR MEALS', () => {
@@ -17,12 +17,12 @@ describe('TESTING FOR MEALS', () => {
    */
   describe('/GET /meals/', () => {
     it('It should get all the meals', (done) => {
-
       chai.request(server)
         .get(`${apiRoute}meals`)
         .end((err, res) => {
-          res.should.have.status(200);
+          res.should.have.property('status', 200);
           res.body.should.be.an('object');
+          console.log(res.body);
           done(err);
         });
     });
@@ -42,7 +42,7 @@ describe('TESTING FOR MEALS', () => {
         .post(`${apiRoute}meals`)
         .send(meal)
         .end((err, res) => {
-          res.should.have.status(200);
+          res.should.have.property('status', 200);
           // res.body.should.be.an('object');
           done(err);
         });

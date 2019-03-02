@@ -9,7 +9,7 @@ import menuRouter from './routes/menu.route';
 const app = express();
 const apiNamespace = '/api/v1/';
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json);
+app.use(bodyParser.json());
 
 app.use(apiNamespace, orderRouter);
 app.use(apiNamespace, mealRouter);

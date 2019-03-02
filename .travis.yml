@@ -8,3 +8,6 @@ script:
   - npm test
 after_success:
 - npm run coverage
+env: 
+global:
+- CODECLIMATE_REPO_TOKEN=9j7QdhpiKZDjWjqPQrBS8rUn1QZrYJIQ7
