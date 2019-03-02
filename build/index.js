@@ -23,7 +23,7 @@ var apiNamespace = '/api/v1/';
 app.use(_bodyParser.default.urlencoded({
   extended: false
 }));
-app.use(_bodyParser.default.json);
+app.use(_bodyParser.default.json());
 app.use(apiNamespace, _order.default);
 app.use(apiNamespace, _meal.default);
 app.use(apiNamespace, _menu.default); // home
