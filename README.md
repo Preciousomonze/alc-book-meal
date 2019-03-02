@@ -2,7 +2,7 @@
 Book A Meal is an Ecommerce web app , for ordering food
 
 [![Build Status](https://travis-ci.com/Preciousomonze/alc-book-meal.svg?branch=development)](https://travis-ci.com/Preciousomonze/alc-book-meal)
-[![Coverage Status](https://coveralls.io/repos/github/Preciousomonze/alc-book-meal/badge.svg)](https://coveralls.io/github/Preciousomonze/alc-book-meal)
+[![Coverage Status](https://coveralls.io/repos/github/Preciousomonze/alc-book-meal/badge.svg?branch=development)](https://coveralls.io/github/Preciousomonze/alc-book-meal?branch=development)
 [![Maintainability](https://api.codeclimate.com/v1/badges/0ac02b550fac93eddfc4/maintainability)](https://codeclimate.com/github/Preciousomonze/alc-book-meal/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/0ac02b550fac93eddfc4/test_coverage)](https://codeclimate.com/github/Preciousomonze/alc-book-meal/test_coverage)
 
