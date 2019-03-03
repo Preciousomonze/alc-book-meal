@@ -8,7 +8,7 @@
     "clean": "rm -rf build && mkdir build",
     "build-server": "babel -d ./build ./server -s",
     "build": "npm run clean && npm run build-server",
-    "test": "mocha --require @babel/register ./test/*.js  --timeout 100000 --exit || true",
+    "test": "nyc mocha --require @babel/register ./test/*.js  --timeout 100000 --exit || true",
     "test-default": "nyc mocha --exit --timeout 100000 --require @babel/register ./test/*.js",
     "start": "nodemon --exec babel-node server/index.js",
     "generate-lcov": "nyc report --reporter=text-lcov > lcov.info",
