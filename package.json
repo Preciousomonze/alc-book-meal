@@ -9,7 +9,7 @@
     "build-server": "babel -d ./build ./server -s",
     "build": "npm run clean && npm run build-server",
     "test-default": "mocha --require @babel/register ./test/*.js  --timeout 100000 --exit || true",
-    "test": "nyc mocha --exit --timeout 100000 --require @babel/register ./test/*",
+    "test": "nyc mocha --exit --timeout 100000 --require @babel/register ./test/*.js",
     "start": "nodemon --exec babel-node server/index.js",
     "generate-lcov": "nyc report --reporter=text-lcov > lcov.info",
     "coveralls-coverage": "coveralls < lcov.info",
@@ -31,8 +31,10 @@
     "dotenv": "^6.2.0",
     "esm": "^3.2.6",
     "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.0",
     "pg": "^7.8.0",
-    "sequelize": "^4.42.0"
+    "sequelize": "^4.42.0",
+    "swagger-ui-express": "^4.0.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
@@ -44,6 +46,7 @@
     "babel-core": "^7.0.0-bridge.0",
     "chai": "^4.2.0",
     "chai-http": "^4.2.1",
+    "codeclimate-test-reporter": "^0.5.1",
     "coveralls": "^3.0.3",
     "eslint": "^5.13.0",
     "eslint-config-airbnb-base": "^13.1.0",
