@@ -4,6 +4,7 @@ node_js:
 cache:
   direcotories:
   - "node_modules"
+before_install: cd ./server
 script: npm test
 after_success: npm run coverage
 env: 
