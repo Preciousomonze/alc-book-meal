@@ -8,4 +8,4 @@ script: npm test
 after_success: npm run coverage
 env: 
   global:
-    - CODECLIMATE_REPO_TOKEN=f71b9292c8a4c2cbb06e9ca48c33d609f383e3597326dd9c0f03f34d4c4459d7
+    - CODECLIMATE_REPO_TOKEN=6f55fa92d5e3e5e0a2cb83e4ba74f6f0704770a5c8d4ac9c07b0ea310077be2a
