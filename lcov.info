@@ -1,5 +1,5 @@
 TN:
-SF:C:\wamp\www\andela\server/index.js
+SF:c:\wamp\www\Andela\server/index.js
 FN:19,(anonymous_1)
 FN:28,(anonymous_2)
 FN:37,(anonymous_3)
@@ -34,7 +34,7 @@ BRF:2
 BRH:2
 end_of_record
 TN:
-SF:C:\wamp\www\andela\server\controllers/meal.controller.js
+SF:c:\wamp\www\Andela\server\controllers/meal.controller.js
 FN:3,getMeals
 FNF:1
 FNH:1
@@ -60,7 +60,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\wamp\www\andela\server\controllers/menu.controller.js
+SF:c:\wamp\www\Andela\server\controllers/menu.controller.js
 FN:3,getMenu
 FNF:1
 FNH:0
@@ -80,7 +80,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\wamp\www\andela\server\controllers/order.controller.js
+SF:c:\wamp\www\Andela\server\controllers/order.controller.js
 FN:3,addOrder
 FNF:1
 FNH:0
@@ -106,7 +106,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\wamp\www\andela\server\data/mealDummyData.js
+SF:c:\wamp\www\Andela\server\data/mealDummyData.js
 FNF:0
 FNH:0
 DA:1,1
@@ -116,7 +116,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\wamp\www\andela\server\data/menuDummyData.js
+SF:c:\wamp\www\Andela\server\data/menuDummyData.js
 FNF:0
 FNH:0
 DA:1,1
@@ -126,7 +126,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\wamp\www\andela\server\data/orderDummyData.js
+SF:c:\wamp\www\Andela\server\data/orderDummyData.js
 FNF:0
 FNH:0
 DA:1,1
@@ -136,7 +136,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\wamp\www\andela\server\models/meal.model.js
+SF:c:\wamp\www\Andela\server\models/meal.model.js
 FN:2,Meal
 FNF:1
 FNH:1
@@ -153,7 +153,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\wamp\www\andela\server\models/menu.model.js
+SF:c:\wamp\www\Andela\server\models/menu.model.js
 FN:2,Menu
 FNF:1
 FNH:0
@@ -170,7 +170,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\wamp\www\andela\server\models/order.model.js
+SF:c:\wamp\www\Andela\server\models/order.model.js
 FN:8,Orders
 FNF:1
 FNH:0
@@ -194,7 +194,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\wamp\www\andela\server\routes/meal.route.js
+SF:c:\wamp\www\Andela\server\routes/meal.route.js
 FNF:0
 FNH:0
 DA:2,1
@@ -211,7 +211,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\wamp\www\andela\server\routes/menu.route.js
+SF:c:\wamp\www\Andela\server\routes/menu.route.js
 FNF:0
 FNH:0
 DA:1,1
@@ -227,7 +227,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\wamp\www\andela\server\routes/order.route.js
+SF:c:\wamp\www\Andela\server\routes/order.route.js
 FNF:0
 FNH:0
 DA:1,1
@@ -244,7 +244,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\wamp\www\andela\server\services/meal.service.js
+SF:c:\wamp\www\Andela\server\services/meal.service.js
 FN:6,getMeals
 FN:8,(anonymous_2)
 FN:28,(anonymous_5)
@@ -289,7 +289,7 @@ BRF:2
 BRH:0
 end_of_record
 TN:
-SF:C:\wamp\www\andela\server\services/menu.service.js
+SF:c:\wamp\www\Andela\server\services/menu.service.js
 FN:5,getMenus
 FN:7,(anonymous_2)
 FNF:2
@@ -322,7 +322,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:C:\wamp\www\andela\server\services/order.service.js
+SF:c:\wamp\www\Andela\server\services/order.service.js
 FN:6,getOrders
 FN:24,(anonymous_4)
 FN:40,(anonymous_6)
